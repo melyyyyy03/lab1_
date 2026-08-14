@@ -46,7 +46,7 @@ List* crea_lista() {
    for (int i=1; i<=10; i++){
       int*num =malloc(sizeof(int));
       *num=i;
-      push_back(L, num);
+      pushBack(L, num);
    }
    
    return L;
@@ -99,9 +99,9 @@ void copia_pila(Stack* P1, Stack* P2) {
    Stack* aux= create_stack();
    void* dato;
    while ((dato=pop(P1))!=NULL){
-      push(aux,dato)
+      push(aux,dato);
          }
-      while ((dato=pop(aux)!=NULL){
+      while ((dato=pop(aux))!=NULL){
       push(P1, dato);
       push(P2, dato);
    }
