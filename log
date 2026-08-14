@@ -1,0 +1,28 @@
+Fri Aug 14 05:47:01 PM UTC 2026: 
+ exercises.c | 50 +++++++++++++++++++++++++++++++++++++++++++++++---
+ 1 file changed, 47 insertions(+), 3 deletions(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘crea_lista’:
+exercises.c:49:7: error: implicit declaration of function ‘push_back’; did you mean ‘pushBack’? [-Wimplicit-function-declaration]
+   49 |       push_back(L, num);
+      |       ^~~~~~~~~
+      |       pushBack
+exercises.c: In function ‘copia_pila’:
+exercises.c:102:21: error: expected ‘;’ before ‘}’ token
+  102 |       push(aux,dato)
+      |                     ^
+      |                     ;
+  103 |          }
+      |          ~           
+exercises.c:104:19: error: assignment to ‘void *’ from ‘int’ makes pointer from integer without a cast [-Wint-conversion]
+  104 |       while ((dato=pop(aux)!=NULL){
+      |                   ^
+exercises.c:104:35: error: expected ‘)’ before ‘{’ token
+  104 |       while ((dato=pop(aux)!=NULL){
+      |             ~                     ^
+      |                                   )
+exercises.c:109:1: error: expected expression before ‘}’ token
+  109 | }
+      | ^
+b1e232d
